@@ -35,7 +35,12 @@ function FeedbackForm({ handleAdd }) {
         rating: rating,
       };
       handleAdd(newFeedback);
-      console.log('newFeedback: ', newFeedback);
+      
+      setText('');
+      setMessage(null);
+      setBtnDisabled(true);
+      e.target.reset();
+      return;
     }
   };
 
