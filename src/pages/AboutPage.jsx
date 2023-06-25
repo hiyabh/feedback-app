@@ -8,9 +8,9 @@ function AboutPage() {
         <h1>About This Project</h1>
         <p>This is a React app to leave feedback for a product or services</p>
         <p>Version: 1.0.0</p>
-        <p>
+        {/* <p>
           <Link to="/">Back To HomePage</Link>
-        </p>
+        </p> */}
       </div>
     </Card>
   );

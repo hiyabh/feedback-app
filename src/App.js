@@ -7,50 +7,53 @@ import FeedbackData from "./data/FeedbackData";
 import FeedbackStats from "./components/FeedbackStats";
 import FeedbackForm from "./components/FeedbackForm";
 import AboutPage from "./pages/AboutPage";
+import PostParams from "./components/PostParams";
+import Post from "./components/Post";
 // import AboutIconLink from "./components/AboutIconLink";
 
 function App() {
+  const [feedback, setFeedback] = useState(FeedbackData);
 
-    const [feedback, setFeedback] = useState(FeedbackData);
-    
-    const addFeedback = (newFeedback) => {
-      newFeedback.id = uuidv4();
-      setFeedback([newFeedback, ...feedback]);
-    };
-    
-    const deleteFeedback = (id) => {
-      if(window.confirm('Are you sure you want to delete this feedback?')) {
-        setFeedback(feedback.filter((feedback) => feedback.id!== id));
-      }
-    };
+  const addFeedback = (newFeedback) => {
+    newFeedback.id = uuidv4();
+    setFeedback([newFeedback, ...feedback]);
+  };
 
-    return (
-      <>
-        <Router>
-          <Header />
-          <div className="container">
-            <Routes>
-              <Route
-                exact
-                path="/"
-                element={
-                  <>
-                    <FeedbackForm handleAdd={addFeedback} />
-                    <FeedbackStats feedback={feedback} />
-                    <FeedbackList
-                      feedback={feedback}
-                      handleDelete={deleteFeedback}
-                    />
-                  </>
-                }
-              ></Route>
-              <Route path="/about" element={<AboutPage />} />
-            </Routes>
-            {/* <AboutIconLink /> */}
-          </div>
-        </Router>
-      </>
-    );
+  const deleteFeedback = (id) => {
+    if (window.confirm("Are you sure you want to delete this feedback?")) {
+      setFeedback(feedback.filter((feedback) => feedback.id !== id));
+    }
+  };
+
+  return (
+    <>
+      <Router>
+        <Header />
+        <div className="container">
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={
+                <>
+                  <FeedbackForm handleAdd={addFeedback} />
+                  <FeedbackStats feedback={feedback} />
+                  <FeedbackList
+                    feedback={feedback}
+                    handleDelete={deleteFeedback}
+                  />
+                </>
+              }
+            ></Route>
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/PostParams/:id/:name" element={<PostParams />} />
+            <Route path="/Post/*" element={<Post />} />
+          </Routes>
+          {/* <AboutIconLink /> */}
+        </div>
+      </Router>
+    </>
+  );
 }
 
 export default App;
