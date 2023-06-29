@@ -9,6 +9,8 @@ import FeedbackForm from "./components/FeedbackForm";
 import AboutPage from "./pages/AboutPage";
 import PostParams from "./components/PostParams";
 import Post from "./components/Post";
+import { FeedbackProvider } from "./context/FeedbackContext";
+
 // import AboutIconLink from "./components/AboutIconLink";
 
 function App() {
@@ -26,7 +28,7 @@ function App() {
   };
 
   return (
-    <>
+    <FeedbackProvider value={{ feedback, setFeedback }}>
       <Router>
         <Header />
         <div className="container">
@@ -37,11 +39,8 @@ function App() {
               element={
                 <>
                   <FeedbackForm handleAdd={addFeedback} />
-                  <FeedbackStats feedback={feedback} />
-                  <FeedbackList
-                    feedback={feedback}
-                    handleDelete={deleteFeedback}
-                  />
+                  <FeedbackStats />
+                  <FeedbackList handleDelete={deleteFeedback} />
                 </>
               }
             ></Route>
@@ -52,7 +51,7 @@ function App() {
           {/* <AboutIconLink /> */}
         </div>
       </Router>
-    </>
+    </FeedbackProvider>
   );
 }
 
