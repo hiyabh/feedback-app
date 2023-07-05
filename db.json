@@ -24,6 +24,11 @@
       "rating": "8",
       "text": "I post from the postman api to",
       "id": 6
+    },
+    {
+      "text": "Test json-server & data fron DB",
+      "rating": 3,
+      "id": 7
     }
   ]
 }
