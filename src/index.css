@@ -17,12 +17,6 @@ ul {
   list-style: none;
 }
 
-.container {
-  max-width: 768px;
-  margin: auto;
-  padding: 0 20px;
-}
-
 header {
   height: 70px;
   width: 100%;
@@ -30,8 +24,21 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  position: relative;
 }
+.container {
+  max-width: 768px;
+  margin: auto;
+  padding: 0 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 768px;
+}
+
 .nav-header {
+  position: absolute;
+  left: 0;
   align-items: center;
   justify-content: space-between;
   text-transform: uppercase;

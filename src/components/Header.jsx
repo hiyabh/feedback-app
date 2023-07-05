@@ -14,9 +14,6 @@ function Header() {
       <div className="container">
         <h1>FeedBack</h1>
       </div>
-      <div className="container">
-        <h1></h1>
-      </div>
     </header>
   );
 }
