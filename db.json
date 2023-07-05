@@ -6,14 +6,9 @@
       "text": "I'm coming from the backend!"
     },
     {
-      "id": 2,
-      "rating": 7,
-      "text": "I'm coming from the backend!"
-    },
-    {
-      "id": 3,
-      "rating": 9,
-      "text": "I'm coming from the backend!"
+      "text": "I'm coming from the backend! 4",
+      "rating": 4,
+      "id": 2
     },
     {
       "rating": "6",
