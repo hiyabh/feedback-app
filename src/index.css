@@ -258,3 +258,28 @@ input:focus {
     width: 80%;
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    height: 80px;
+    flex-direction: column;
+    padding: 10px 0;
+    margin-bottom: 15px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+    position: static;
+    transform: none;
+  }
+
+  .nav-header {
+    position: static;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 5px;
+    justify-content: space-around;
+  }
+}
+
