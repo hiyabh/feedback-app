@@ -2,28 +2,28 @@
   "feedback": [
     {
       "id": 1,
-      "rating": 4,
-      "text": "I'm coming from the backend!"
+      "rating": 10,
+      "text": "I love this App and it's great!"
     },
     {
-      "text": "I'm coming from the backend! 4",
-      "rating": 4,
-      "id": 2
+      "id": 2,
+      "rating": 9,
+      "text": "Absolutely adore this app, it's amazing!"
     },
     {
-      "rating": "6",
-      "text": "I post from the postman api",
-      "id": 5
+      "id": 3,
+      "rating": 10,
+      "text": "Best app I've ever used, hands down!"
     },
     {
-      "rating": "8",
-      "text": "I post from the postman api to",
-      "id": 6
+      "id": 4,
+      "rating": 8,
+      "text": "This application is fantastic! Highly recommend."
     },
     {
-      "text": "Test json-server & data fron DB",
-      "rating": 3,
-      "id": 7
+      "id": 5,
+      "rating": 10,
+      "text": "Impressed with the functionality of this app, it's brilliant!"
     }
   ]
 }
