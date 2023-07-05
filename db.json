@@ -19,6 +19,11 @@
       "rating": "6",
       "text": "I post from the postman api",
       "id": 5
+    },
+    {
+      "rating": "8",
+      "text": "I post from the postman api to",
+      "id": 6
     }
   ]
 }
