@@ -8,17 +8,27 @@ export const FeedbackProvider = ({ children }) => {
       {
         id: 1,
         rating: 10,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.",
+        text: "I love this App and it's great!",
       },
       {
         id: 2,
         rating: 9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.",
+        text: "Absolutely adore this app, it's amazing!",
       },
       {
         id: 3,
+        rating: 10,
+        text: "Best app I've ever used, hands down!",
+      },
+      {
+        id: 4,
         rating: 8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.",
+        text: "This application is fantastic! Highly recommend.",
+      },
+      {
+        id: 5,
+        rating: 10,
+        text: "Impressed with the functionality of this app, it's brilliant!",
       },
     ]);
 
